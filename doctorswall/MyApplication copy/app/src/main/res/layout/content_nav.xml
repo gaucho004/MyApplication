@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|bottom"
+    android:orientation="vertical"
+
+
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:background="@color/white"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/backdefault"
+                android:id="@+id/docwall">
+
+
+
+
+                <victor.doctorswall.components.CircularImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/default_user_icon"
+                    android:id="@+id/docprofilepic"
+                    android:tint="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="-35dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:text="Dr. Gaucho Agregado, MD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_opaque"
+                android:id="@+id/doc_textname"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginStart="80dp"
+                android:layout_below="@+id/docwall"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/doctor_addpost"
+                android:padding="2dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/blog1"
+                android:tint="#9f9999"
+
+                android:layout_alignBottom="@+id/doc_specialization"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/doctor_addfriend"
+                android:padding="2dp"
+                android:tint="#9f9999"
+                android:paddingRight="5dp"
+
+                android:src="@drawable/add99"
+                android:layout_alignTop="@+id/doctor_addpost"
+                android:layout_toLeftOf="@+id/doctor_addpost"
+                android:layout_toStartOf="@+id/doctor_addpost" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/doc_specialization"
+                android:layout_below="@+id/doc_textname"
+                android:layout_alignLeft="@+id/doc_textname"
+                android:layout_alignStart="@+id/doc_textname" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/stethoscope"
+                android:tint="#9f9999"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="22dp"
+                android:layout_marginStart="22dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView2"
+                android:tint="#9f9999"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/university20"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView3"
+                android:tint="#9f9999"
+                android:src="@drawable/teacher4"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_marginStart="30dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:tint="#9f9999"
+                android:src="@drawable/envelope92"
+                android:id="@+id/imageView4"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/imageView3"
+                android:layout_toEndOf="@+id/imageView3" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:tint="#9f9999"
+                android:id="@+id/imageView5"
+
+                android:src="@drawable/calendar189"
+                android:layout_alignTop="@+id/imageView4"
+                android:layout_toRightOf="@+id/imageView4"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <view
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/listpost"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"
+            android:divider="@android:color/transparent"
+
+
+
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

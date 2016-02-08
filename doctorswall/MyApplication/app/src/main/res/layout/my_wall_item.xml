@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="1dp"
+        android:layout_marginBottom="0dp">
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" android:src="@drawable/default_user"
+                    android:id="@+id/doctor_ivprofile" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="gaucho agregado, MD"
+
+                    android:id="@+id/doctor_item_mallname"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/doctor_ivprofile"
+                    android:layout_toEndOf="@+id/doctor_ivprofile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="yesterday"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="13sp"
+
+                    android:id="@+id/doctor_item_datepost"
+                    android:layout_below="@+id/doctor_item_mallname"
+                    android:layout_toRightOf="@+id/doctor_ivprofile"
+                    android:layout_toEndOf="@+id/doctor_ivprofile" />
+
+
+            </RelativeLayout>
+
+            <View android:id="@+id/separator"
+                android:background="#8B6969"
+                android:layout_marginTop="10dp"
+                android:layout_width = "fill_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical ="true"
+                android:layout_alignParentTop="true"/>
+
+            <RelativeLayout
+
+                android:id="@+id/doctor_rlmainpost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/doctor_mainpost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/sample_post1"
+                        android:id="@+id/doctor_postmainimage"
+                        android:layout_below="@+id/doctor_tvheadtag"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Yes! It is!"
+                        android:id="@+id/doctor_tvheadtag"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <!---->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Google News is a free news aggregator provided and operated by Google, selecting up-to-date news "
+                        android:id="@+id/doctor_tvsubtag"
+                        android:layout_above="@+id/relativeLayout9"
+                        android:layout_toRightOf="@+id/doctor_postmainimage"
+                        android:layout_toEndOf="@+id/doctor_postmainimage" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/relativeLayout9"
+                        android:layout_alignBottom="@+id/doctor_postmainimage"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true">
+
+
+                        <ImageView
+                            android:id="@+id/doctor_imageView14"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:src="@drawable/emoticon85"
+                            android:tint="#9f9999"
+
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/doctor_tvrate"
+                            android:layout_toStartOf="@+id/doctor_tvrate"
+                            android:layout_marginRight="10dp" />
+                        <TextView
+                            android:id="@+id/doctor_tvcommentcount"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5k"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp" />
+
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/doctor_imageView15"
+                            android:layout_height="20dp"
+                            android:src="@drawable/blog1"
+                            android:tint="#9f9999"
+
+                            android:layout_alignBottom="@+id/doctor_tvcommentcount"
+                            android:layout_toLeftOf="@+id/doctor_tvcommentcount"
+                            android:layout_toStartOf="@+id/doctor_tvcommentcount"
+                            android:layout_marginRight="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5.0"
+                            android:textSize="13sp"
+                            android:id="@+id/doctor_tvrate"
+                            android:layout_alignTop="@+id/doctor_tvcommentcount"
+                            android:layout_toLeftOf="@+id/doctor_imageView15"
+                            android:layout_toStartOf="@+id/doctor_imageView15"
+                            android:layout_marginRight="10dp" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_bottom_stuff"
+
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        card_view:cardUseCompatPadding="true"
+        android:background="@color/AntiqueWhite"
+        card_view:cardElevation="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:weightSum="80"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/doctor_llshare"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content" android:layout_weight="20"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/share15"
+                    android:layout_gravity="center"
+                    android:tint="#9f9999"
+
+
+                    android:id="@+id/doctor_imagshare"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/doctor_text_share"
+                    android:text="share"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/doctor_llrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_weight="20"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:tint="#9f9999"
+
+                    android:src="@drawable/emoticon85"
+                    android:id="@+id/doctor_Happy"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:text="like"
+                    android:id="@+id/doctor_textrate"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/doctor_llcomment"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/blog1"
+                    android:tint="#9f9999"
+
+                    android:layout_gravity="center"
+                    android:id="@+id/doctor_imgcomment" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="comment"
+                    android:id="@+id/doctor_textcomment"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

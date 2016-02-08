@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_margin_register">5dp</dimen>
+    <dimen name="activity_margin_mainscreen">30dp</dimen>
+    <dimen name="activity_margin_feedback">20dp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <dimen name="rating_min_height">19dip</dimen>
+    <dimen name="rating_max_height">19dip</dimen>
+    <dimen name="image_type_height_width">50dp</dimen>
+    <dimen name="drawer_font_size">15.0sp</dimen>
+    <dimen name="ub_view_margin">10.0dip</dimen>
+    <dimen name="ub_search_padding_medium">16.0dip</dimen>
+    <dimen name="ub_textsize_search_small">12.0sp</dimen>
+    <dimen name="ub_textsize_search_big">15.0sp</dimen>
+    <dimen name="ub_textsize_extra_big">45.0sp</dimen>
+    <dimen name="ub_textsize_big">35.0sp</dimen>
+    <dimen name="ub_textsize_medium">18.0sp</dimen>
+    <dimen name="ub_textsize_small">13.0sp</dimen>
+    <dimen name="margin_left_right_bill">20dip</dimen>
+    <dimen name="ub_textsize_huge">60.0sp</dimen>
+
+    <dimen name="crop__bar_height">48dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="pad_5dp">5dp</dimen>
+    <dimen name="pad_10dp">10dp</dimen>
+    <dimen name="pad_15dp">15dp</dimen>
+    <dimen name="pad_20dp">20dp</dimen>
+    <dimen name="pad_30dp">30dp</dimen>
+    <dimen name="pad_chat_item">45dp</dimen>
+    <dimen name="pad_chat_item1">10dp</dimen>
+
+    <dimen name="txt_7sp">7sp</dimen>
+    <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_13sp">13sp</dimen>
+    <dimen name="txt_14sp">14sp</dimen>
+    <dimen name="txt_15sp">15sp</dimen>
+    <dimen name="txt_16sp">16sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
+    <dimen name="txt_20sp">20sp</dimen>
+</resources>

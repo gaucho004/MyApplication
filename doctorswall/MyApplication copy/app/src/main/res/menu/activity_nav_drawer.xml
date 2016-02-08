@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/md"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/contacts1"
+            android:title="Contacts" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/gear74"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Work">
+        <menu>
+            <item
+                android:id="@+id/nav_schedule"
+                android:icon="@drawable/time36"
+                android:title="Appointments" />
+            <item
+                android:id="@+id/nav_activity_log"
+                android:icon="@drawable/history2"
+                android:title="My Activities" />
+            <item
+                android:id="@+id/nav_badges"
+                android:icon="@drawable/prize3"
+                android:title="Badges" />
+            <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/warning45"
+            android:title="Notifications" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout13"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+</menu>
